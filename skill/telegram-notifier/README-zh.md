@@ -32,7 +32,9 @@
 最短路径是这样：
 
 - `TELEGRAM_BOT_TOKEN`：先去 BotFather 创建机器人，再复制它返回的 token
-- `TELEGRAM_CHAT_ID`：先给目标聊天发一条消息，再查看机器人最近一次 update 的返回内容，从那条会话里找到数字形式的 chat ID
+- `TELEGRAM_CHAT_ID`：先给目标聊天发一条消息，再打开 `https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/getUpdates`，从那条会话里的 `chat.id` 复制纯数字 chat ID
+
+如果 `getUpdates` 返回空列表，先打开这个 bot 的聊天窗口，点一次 `Start` 或发一条 `hi`，等一秒后再刷新同一个地址。
 
 ## 手动测试
 

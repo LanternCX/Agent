@@ -32,7 +32,9 @@ Required keys:
 Use the shortest path that gets the value:
 
 - `TELEGRAM_BOT_TOKEN`: create a bot with BotFather, then copy the token it returns
-- `TELEGRAM_CHAT_ID`: send a message to the target chat first, then check the bot's latest update and copy the numeric chat id from that conversation
+- `TELEGRAM_CHAT_ID`: send a message to the target chat first, open `https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/getUpdates`, then copy the numeric `chat.id` from that conversation
+
+If `getUpdates` returns an empty list, open the bot chat, press `Start` or send a short message like `hi`, wait a second, and refresh the same URL.
 
 ## Manual test
 

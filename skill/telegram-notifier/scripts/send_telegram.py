@@ -1,4 +1,5 @@
 import json
+import ssl
 import sys
 import urllib.error
 import urllib.request
@@ -6,6 +7,7 @@ from pathlib import Path
 
 
 REQUIRED_KEYS = ("TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID")
+SYSTEM_CERT_BUNDLE_PATH = Path("/etc/ssl/cert.pem")
 
 
 def load_config(config_path: Path) -> dict[str, str]:
@@ -31,6 +33,12 @@ def load_config(config_path: Path) -> dict[str, str]:
     return config
 
 
+def build_ssl_context() -> ssl.SSLContext:
+    if sys.platform == "darwin" and SYSTEM_CERT_BUNDLE_PATH.exists():
+        return ssl.create_default_context(cafile=str(SYSTEM_CERT_BUNDLE_PATH))
+    return ssl.create_default_context()
+
+
 def send_message(config: dict[str, str], message_text: str) -> tuple[bool, str]:
     url = f"https://api.telegram.org/bot{config['TELEGRAM_BOT_TOKEN']}/sendMessage"
     payload = json.dumps(
@@ -44,7 +52,7 @@ def send_message(config: dict[str, str], message_text: str) -> tuple[bool, str]:
     )
 
     try:
-        with urllib.request.urlopen(request) as response:
+        with urllib.request.urlopen(request, context=build_ssl_context()) as response:
             body = json.loads(response.read().decode("utf-8"))
     except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError) as exc:
         reason = getattr(exc, "reason", None) or str(exc) or exc.__class__.__name__

@@ -16,7 +16,14 @@ Ask for these values one at a time:
 If the user does not know where to get them, give the shortest practical hint:
 
 - for `TELEGRAM_BOT_TOKEN`: create a bot with BotFather and copy the returned token
-- for `TELEGRAM_CHAT_ID`: send a message to the target chat first, then look at the bot's latest update, find that conversation, and copy only the numeric chat id
+- for `TELEGRAM_CHAT_ID`: send a message to the target chat first, open `https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/getUpdates`, find the latest conversation under `chat.id`, and copy only the numeric chat id
+
+If the user says `getUpdates` returns an empty result, guide them with the shortest next step:
+
+- open the bot chat in Telegram
+- press `Start` or send a short message like `hi`
+- wait a second and refresh the same `getUpdates` URL
+- then copy the numeric value from `"chat":{"id":...}`
 
 ## Rules
 
