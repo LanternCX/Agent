@@ -8,17 +8,21 @@
 
 | 名称 | 用途 | 本地文件 |
 | --- | --- | --- |
-| init-project | 用于约束新项目初始化时的工作流、文档和代码规范 | `prompt/init-project.md` |
-| Gemini 中文论文 prompt | 用于生成中文论文类内容的提示词模板 | `prompt/peper.md` |
+| init-project-prompt | 通过可配置的初始化约束新建一个新项目 | `prompt/init-project.md` |
+| paper-prompt | 期末周帮我写论文用的 | `prompt/peper.md` |
 
 ## Skill
 
 自己写的一些 Skill
 
+尽量贴近渐进式披露的思想，Skill 都尽力防止了上下文腐化
+
 | 名称 | 用途 | 本地文件 |
 | --- | --- | --- |
-| using-memory | 在设计、规划或实现前检索项目历史决策与约束 | `skill/using-memory/SKILL.md` |
-| record-memory | 在工作完成后记录可复用的项目记忆 | `skill/record-memory/SKILL.md` |
+| using-memory | 使用 memory 系统 | `skill/using-memory/SKILL.md` |
+| record-memory | 构建与维护 memory 系统 | `skill/record-memory/SKILL.md` |
+| using-opencode | 教 opencode 怎么使用自己 | `skill/using-opencode/SKILL.md` |
+| telegram-notifier | 完成任务之后转发完成消息到 Telegram Bot | `skill/telegram-notifier/SKILL.md` |
 
 ## Rules
 
@@ -26,7 +30,7 @@
 
 | 名称 | 用途 | 本地文件 |
 | --- | --- | --- |
-| AGENT.md | 规定沟通方式、汇报风格和协作边界 | `rules/AGENT.md` |
+| AGENT.md | 搜集 + 自己迭代来的好用规则 | `rules/AGENT.md` |
 
 ## 文章
 
