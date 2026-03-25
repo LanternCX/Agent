@@ -1,6 +1,6 @@
 ---
 name: telegram-notifier
-description: Use after the work is actually complete and the user may have stepped away.
+description: Use when a non-instant task is finished and you are about to send the final reply, especially if the user may have stepped away.
 ---
 
 # telegram-notifier
