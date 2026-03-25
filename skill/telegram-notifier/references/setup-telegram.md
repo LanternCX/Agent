@@ -32,7 +32,7 @@ If the user says `getUpdates` returns an empty result, guide them with the short
 - Do not ask the user to manually edit a config file.
 - If the user does not want to configure it now, skip this notification and continue the main task.
 - If the user is unsure where to look, give the shortest next step instead of abstract API jargon.
-- Remind the user that project name, session id, completion status, and start time are filled automatically later and do not need to be provided during setup.
+- Remind the user that the reminder content is built automatically later and does not need to be provided during setup.
 
 ## Write Format
 

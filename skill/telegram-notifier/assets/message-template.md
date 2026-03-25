@@ -1,1 +1,1 @@
-[{{project_name}}] Task {{task_label}} Completed. (start at {{started_at}})
+[{{project_name}}] Task {{task_label}} Completed.

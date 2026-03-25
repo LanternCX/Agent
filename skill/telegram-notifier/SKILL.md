@@ -1,6 +1,6 @@
 ---
 name: telegram-notifier
-description: Send a Telegram completion reminder when you judge the current result is worth proactively notifying the user about. Use after the work is actually complete and the user may have stepped away.
+description: Use after the work is actually complete and the user may have stepped away.
 ---
 
 # telegram-notifier
@@ -39,10 +39,8 @@ Do not use this skill when:
 2. Read `assets/message-template.md` and use that exact plain-text structure.
 3. Build a minimal reminder using:
     - current project name
-    - current session id
     - a very short task label
     - the fixed completion wording already present in the template
-    - task start time
 4. Keep the final message to a single concise line whenever possible.
 5. Run `python3 skill/telegram-notifier/scripts/send_telegram.py --config skill/telegram-notifier/config.local.env "<final message>"`.
 6. If sending succeeds, stop.
