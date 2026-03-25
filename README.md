@@ -22,7 +22,19 @@
 | using-memory | 使用 memory 系统 | `skill/using-memory/SKILL.md` |
 | record-memory | 构建与维护 memory 系统 | `skill/record-memory/SKILL.md` |
 | using-opencode | 教 opencode 怎么使用自己 | `skill/using-opencode/SKILL.md` |
-| telegram-notifier | 完成任务之后转发完成消息到 Telegram Bot | `skill/telegram-notifier/SKILL.md` |
+| telegram-notifier | 在需要我回来确认、查看或收尾时发 Telegram 提醒 | `skill/telegram-notifier/SKILL.md` |
+
+## Commands
+
+自己写的一些命令
+
+虽然说其实更具备兼容性的方式是用 Skill 实现，因为实际上 Command 和 Skill 没有本质区别
+
+但是 Command 作为一个手动触发的更短的 Skill 在有些场景挺好用的
+
+| 名称 | 用途 | 本地文件 |
+| --- | --- | --- |
+| `/remind` | 主动告诉 Agent 我要离开，让他通过 TG 叫我 | `commands/remind.md` |
 
 ## Rules
 
