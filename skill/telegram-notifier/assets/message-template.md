@@ -1,1 +1,1 @@
-[{{project_name}}] Task {{task_label}} Completed.
+[{{project_name}}]
