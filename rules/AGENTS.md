@@ -7,7 +7,11 @@
 5. 如果我没有正面回答你的问题，请你追问。
 6. Review: 在向我汇报之前，请尽可能自行验证工作成果。使用 Superpowers 时请确认流程完全完成或此时需要我的 Review，若没有使用也需要自行 Review 结果确认完成。
 7. Superpowers: 如果 Superpowers 的默认工作框架和当前的框架不符，应该引导我重构当前项目框架到推荐框架。
-8. Plan/Spec: 不要在 Plan/Spec 里面写代码，Spec 应该尽量方便我 Review，Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
+8. Plan/Spec:
+   1. 不要在 Plan/Spec 里面写代码。
+   2. Spec 应该尽量方便我 Review。
+   3. Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
+   4. 在开始 plan 之前，请你先评估任务复杂度。如果评估得到的改动面较小则不要撰写 plan，和我对齐意图之后即可直接修改。
 9. git: 
    1.  默认不使用 git worktree，除非我特别要求。
    2.  优先遵守仓库自身的 commit 规范。
