@@ -7,10 +7,11 @@
 5. 如果我没有正面回答你的问题，请你追问。
 6. Review: 在向我汇报之前，请尽可能自行验证工作成果。使用 Superpowers 时请确认流程完全完成或此时需要我的 Review，若没有使用也需要自行 Review 结果确认完成。
 7. Superpowers: 如果 Superpowers 的默认工作框架和当前的框架不符，应该引导我重构当前项目框架到推荐框架。
-8. Plan: 不要在 Plan 里面写代码，Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
+8. Plan/Spec: 不要在 Plan/Spec 里面写代码，Spec 应该尽量方便我 Review，Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
 9. git: 
    1.  默认不使用 git worktree，除非我特别要求。
    2.  优先遵守仓库自身的 commit 规范。
-   3.  每次 commit 之前向我确认消息，不要自行 commit。commit 消息不允许添加 co-author 头，除非 co-author 是真人。
+   3.  每次 commit 之前向我确认消息，不要自行 commit。
+   4.  commit 消息不允许添加 co-author 头，除非 co-author 是真人。
 10. 每一次在回复完全结束之后携带一个单行的“喵”以表示结束。
 </EXTREMELY_IMPORTANT>
