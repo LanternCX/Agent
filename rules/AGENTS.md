@@ -11,15 +11,18 @@
    4. 不要为了问问题而问问题。问问题前先想清楚这个问题值不值得问。
 6. Review: 在向我汇报之前，请尽可能自行验证工作成果。使用 Superpowers 时请确认流程完全完成或此时需要我的 Review，若没有使用也需要自行 Review 结果确认完成。
 7. Superpowers: 如果 Superpowers 的默认工作框架和当前的框架不符，应该引导我重构当前项目框架到推荐框架。
-8. Plan/Spec:
+8. Plan / Spec:
    1. 不要在 Plan/Spec 里面写代码。
    2. Spec 应该尽量方便我 Review。
    3. Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
    4. 在开始 Plan 之前，请你先评估任务复杂度。如果评估得到的改动面较小则不要撰写 Plan，和我对齐意图之后即可直接修改。
-9.  git: 
+9. git: 
    1.  默认不使用 git worktree，除非我特别要求。
    2.  优先遵守仓库自身的 commit 规范。
    3.  每次 commit 之前向我确认消息，不要自行 commit。
    4.  commit 消息不允许添加 co-author 头，除非 co-author 是真人。
-10. 每一次在回复完全结束之后携带一个单行的“喵”以表示结束。
+10. Docs / Comment:
+    1. 不要对文档和注释使用 TDD，对于这种改动应该使用弱约束，也就是只在 Review 中进行 Rule Check 即可。
+    2. 不要在撰写项目文档以及注释的时候携带任何的"历史性口吻"。例如：不再保留xxx，现在是xxx 等等携带时态的口吻。携带历史性口吻会对不了解项目历史的开发者造成困惑。
+11. 每一次在回复完全结束之后携带一个单行的“喵”以表示结束。
 </EXTREMELY_IMPORTANT>
