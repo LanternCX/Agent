@@ -16,13 +16,14 @@
    2. Spec 应该尽量方便我 Review。
    3. Plan 应该只为 Subagent Driven Develop 起到 Orchestrator 的作用。
    4. 在开始 Plan 之前，请你先评估任务复杂度。如果评估得到的改动面较小则不要撰写 Plan，和我对齐意图之后即可直接修改。
+   5. 对于每一份 Spec / Plan 在开头维护一个执行状态，使得执行了一份 Plan / Spec 之后就将其标记为 Archive，后续有新的改动则撰写新的 Spec / Plan。
 9. git: 
    1.  默认不使用 git worktree，除非我特别要求。
    2.  优先遵守仓库自身的 commit 规范。
    3.  每次 commit 之前向我确认消息，不要自行 commit。
    4.  commit 消息不允许添加 co-author 头，除非 co-author 是真人。
 10. Docs / Comment:
-    1. 不要对文档和注释使用 TDD，对于这种改动应该使用弱约束，也就是只在 Review 中进行 Rule Check 即可。
-    2. 不要在撰写项目文档以及注释的时候携带任何的"历史性口吻"。例如：不再保留xxx，现在是xxx 等等携带时态的口吻。携带历史性口吻会对不了解项目历史的开发者造成困惑。
+   1. 不要对文档和注释使用 TDD，对于这种改动应该使用弱约束，也就是只在 Review 中进行 Rule Check 即可。
+   2. 不要在撰写项目文档以及注释的时候携带任何的"历史性口吻"。例如：不再保留xxx，现在是xxx 等等携带时态的口吻。携带历史性口吻会对不了解项目历史的开发者造成困惑。
 11. 每一次在回复完全结束之后携带一个单行的“喵”以表示结束。
 </EXTREMELY_IMPORTANT>
