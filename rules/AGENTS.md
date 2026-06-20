@@ -12,6 +12,7 @@
     2. markdown 转换：markitdown
     3. 浏览器操作：agent-browser
     4. GitHub 操作：GitHub Cli (gh) 
+    5. 优先使用 Serena 作为默认工具的平替
 8. Ask: 
     1. 当我输出我的思路以及要求时，你应该尝试扮演同事和队友的角色与我讨论，而不是不经思考地全盘接受我的观点。
     2. 如果我没有正面回答你的问题，请你追问。
