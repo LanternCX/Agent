@@ -1,43 +1,30 @@
-# 我的 Agent 相关文件备份
+# 我的 Agent Harness
 
-不完全复制粘贴，只做别人没做过的事情
+个人规则与常用 Skills。
 
-## Prompt
+## Quickstart
 
-提示词模版
+把下面这句话发给 Agent：
 
-| 名称 | 用途 | 本地文件 |
+```text
+请阅读 https://github.com/LanternCX/Agent/blob/main/INSTALL.md，并按照说明完成安装。
+```
+
+## 组件
+
+| 组件 | 用途 | 来源 |
 | --- | --- | --- |
-| paper-prompt | 期末周帮我写论文用的 | `prompt/peper.md` |
+| Matt Skills | 开发工作流 | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| Ponytail | 简化实现，控制复杂度 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) |
+| 个人规则 | 协作偏好与开发约束 | [rules/AGENTS.md](rules/AGENTS.md) |
 
-## Skill
+独立 Skill 安装到 `~/.agents/skills/`；工作流套件遵循上游安装说明。具体步骤见 [安装说明](INSTALL.md)。
 
-自己写的一些 Skill
+## 可选 Skills
 
-尽量贴近渐进式披露的思想，Skill 都尽力防止了上下文腐化
+以下 Skills 按需安装：
 
-| 名称 | 用途 | 本地文件 |
+| Skill | 用途 | 来源 |
 | --- | --- | --- |
-| telegram-notifier | 在需要我回来确认、查看或收尾时发 Telegram 提醒 | `skill/telegram-notifier/SKILL.md` |
-
-## Rules
-
-项目以及全局的一般规则
-
-| 名称 | 用途 | 本地文件 |
-| --- | --- | --- |
-| AGENTS.md | 搜集 + 自己迭代来的好用规则 | `rules/AGENTS.md` |
-
-## 文章
-
-设计与最佳实践有关文章
-
-转换为了 Markdown 格式方便 Agent 阅读，有些做了翻译，剩下什么都没改。
-
-| 名称 | 简介 | 原文链接 | 本地文件 |
-| --- | --- | --- | --- |
-| 提示词最佳实践 | Claude 提示词编写与代理式系统实践整理 | https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices | `artical/anthropic-prompt-best-practice-zh.md` |
-| 你不知道的 Claude Code：架构、治理与工程实践 | Claude Code 的使用经验与工程实践整理 | https://x.com/HiTw93/status/2032091246588518683 | `artical/you-dont-know-claude-zh.md` |
-| 5 Agent Skill design patterns every ADK developer should know | Google Cloud Tech 分享的 5 种 Skill 设计模式 | https://x.com/GoogleCloudTech/status/2033953579824758855 | `artical/5-skill-design-patterns.md` |
-| 构建 Claude Code 的经验：我们如何使用 Skills【译】 | 关于 Claude Code 中 Skills 用法的译文整理 | https://x.com/dotey/status/2034002188994060691 | `artical/how-anthorpic-use-skill.md` |
-| 你不知道的 Agent：原理、架构与工程实践 | Agent 原理、架构和实践经验整理 | https://x.com/HiTw93/status/2034627967926825175 | `artical/you-dont-know-agent.md` |
+| Frontend Design | 前端界面设计 | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| telegram-notifier | 任务完成时发送 Telegram 提醒 | [自定义 Skill](skill/telegram-notifier/README-zh.md) |
